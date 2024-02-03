@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>HooBank</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="/style/reset.css" />
+	<link rel="stylesheet" href="/style/index.css" />
+	<link rel="stylesheet" href="style/break-points.css" />
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__top-inner">
+					<div class="header__logo">
+						<a href="#!" class="header__logo-1">
+							<img src="./img/logo-HooBank.png" alt="Logo" />
+						</a>
+					</div>
+					<div class="burger-container" id="burger">
+						<div class="burger">
+							<span></span>
+						</div>
+					</div>
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li class="header__item">
+								<a href="#!" class="header__link">Home</a>
+							</li>
+							<li class="header__item">
+								<a href="#!" class="header__link">About Us</a>
+							</li>
+							<li class="header__item">
+								<a href="#!" class="header__link">Features</a>
+							</li>
+							<li class="header__item">
+								<a href="#!" class="header__link">Solution</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="generation">
+				<div class="container">
+
+					<div class="text-content">
+
+						<div class="generation__text-line text-line">
+							<p class="text-line__box">
+								20% <span>DISCOUNT FOR</span> 1 MONTH <span>ACCOUNT</span>
+							</p>
+						</div>
+						<div class="title">
+
+							<div class="generation__title">
+								<h1>The Next <br><span>Generation</span> <br>Payment Method.</h1>
+								<div class="border__click-container">
+									<a href="#!" class="border__click">
+										<span>Get</span> <br>Started!
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="generation__descr descr">
+							<p class="text__descr">
+								Our team of experts uses a methodology to identify <br />
+								the credit cards most likely to fit your needs. <br />
+								We examine annual percentage rates, annual fees.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+<script>
+	const a = document.getElementById('burger')
+	const b = document.querySelector('.header__list')
+
+	a.addEventListener('click', () => {
+		b.classList.toggle('active')
+	})
+</script>
+
+</html>

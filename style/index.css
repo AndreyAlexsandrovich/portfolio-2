@@ -1,0 +1,184 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #00040f;
+}
+
+.wrapper {
+	box-sizing: border-box;
+	max-height: 100vh;
+}
+
+.container {
+	max-width: 1138px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+.header__top-inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 36px 0 30px;
+	align-items: center;
+}
+
+.header__logo {
+	max-width: 100%;
+}
+
+.header__list {
+	display: flex;
+	gap: 56px;
+}
+
+.header__link {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: clamp(0.5rem, 1rem, 4rem);
+	font-weight: 400;
+	line-height: 130%;
+	transition: 0.3s color ease-in-out;
+
+	&:hover {
+		color: rgb(255, 255, 255);
+	}
+}
+
+.burger-container {
+	position: relative;
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	display: none;
+}
+
+.burger::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 20px;
+	height: 1px;
+	background-color: #ffff;
+}
+
+.burger span {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 10px;
+	height: 1px;
+	background-color: #ffff;
+}
+
+.burger::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 30px;
+	height: 1px;
+	background-color: #ffff;
+}
+
+/* section generate */
+.generation { 
+	background: url(../img/Group\ 481777.png);
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 65px 0 65px;
+}
+
+
+
+.text-line__box {
+	color: #fff;
+	font-size: 13.5pt;
+	font-weight: 400;
+	line-height: 150%;
+	border-radius: 10px;
+	background: linear-gradient(125deg, #272727 0%, #11101d 100%);
+	display: inline;
+	padding: 0.36vw 0.52vw 0.36vw 2.86vw;
+}
+
+.text-line__box {
+	position: relative;
+	color: rgb(0, 249, 250, 1);
+}
+
+.generation__title {
+	font-weight: 600;
+	margin-top: 12px;
+	max-width: 730px;
+	position: relative;
+	margin-top: 16px;
+	margin-bottom: 40px;
+}
+
+.generation__title h1 { 
+	color: #fff;
+	font-size: 54pt;
+	line-height: 150%;
+	text-wrap: wrap;
+}
+
+.generation__title span {
+	color: rgb(0, 249, 250, 1);
+}
+
+.border__click-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	width: 140px;
+	height: 140px;
+	justify-content: center;
+	border-radius: 50%;
+	align-items: center;
+	box-shadow: -2px 0 0 2px rgba(61, 173, 233, 0.75),
+		-2px -2px 0 2px rgba(94, 142, 226, 0.25),
+		-2px 2px 0 2px rgba(94, 142, 226, 0.25),
+		0 -2px 0 2px rgba(126, 110, 218, 0.5), 0 2px 0 2px rgba(0, 229, 255, 0.5),
+		2px -2px 0 2px rgba(159, 79, 211, 0.25),
+		2px 2px 0 2px rgba(159, 79, 211, 0.25), 2px 0 0 2px rgba(191, 47, 203, 0.75);
+}
+
+
+.border__click {
+	font-size: 13.5pt;
+	color: #fff;	
+	position: relative;
+	font-weight: 500;
+	line-height: 130%;
+}
+
+.border__click span::after { 
+  content: url(../img/Arrow\ -\ Up.svg);
+  position: absolute;
+  bottom: 45%;
+  right: 25%;
+  transform: translateY(-45%);
+  width: 23px;
+  height: 23px;
+
+}
+
+.text-line__box::before {
+	content: url(../img/parseInt.svg);
+	position: absolute;
+	top: 50%;
+	left: 1.5%;
+	transform: translateY(-50%);
+	width: 32px;
+	height: 32px;
+}
+
+.text__descr {
+	font-size: 1.125rem;
+	color: #ffffffbd;
+	font-weight: 400;
+	line-height: 200%;
+}
